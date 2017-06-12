@@ -1,5 +1,5 @@
 #!/bin/sh
-while inotifywait -e modify /var/log/apache2/access.log; do
+while inotifywait -e modify /var/log/apache2/other_vhosts_access.log; do
   # if tail -n1 /var/log/apache2/access.log | grep httpd; then
     kdialog --msgbox "Hello From Apache!"
   # fi
