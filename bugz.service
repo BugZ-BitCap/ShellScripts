@@ -1,0 +1,11 @@
+[Unit]
+Description=Bugz Monitoring Srvice
+
+[Service]
+User=root
+Restart=always
+Type=forking
+ExecStart=/usr/desktop/bugz/SynchronousMonitorApache.sh
+
+[Install]
+WantedBy=multi-user.target
